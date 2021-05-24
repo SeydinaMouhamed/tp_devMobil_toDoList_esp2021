@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>TodoList</title>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1 role="header">To do list</h1>
+        </div>
+
+        <div data-role="content">
+            <form>
+                <input id="task" type="text" value="Test" placeholder="Ajouter une tache...">
+                <input id="addButton" type="button" value="Ajouter" onclick="addTask()">
+            </form>
+            <ul data-role="listview" id="taskList" data-inset="true" data-filter="true" data-filter-placeholder="rechercher une tache..">
+
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <center>
+                <p>To do list App | &copy; M2GLSI 2021</p>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
